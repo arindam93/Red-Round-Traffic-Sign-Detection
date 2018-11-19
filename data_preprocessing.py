@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 
 ##################### Reading the data ########################
 
-data = pd.read_csv('FullIJCNN2013/gt.txt', sep=";", header=None)
+data = pd.read_csv('jpg_FullIJCNN2013/gt.txt', sep=";", header=None)
 data.columns = ["img", "x1", "y1", "x2", "y2", "id"]
 
 tmp = data.copy()
