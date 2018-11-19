@@ -31,3 +31,4 @@ The JPEG converted images should be downloaded from here:
 https://drive.google.com/open?id=1lhF33cKqeiMdHOvkeNX-p_f3pDaMuI9t
 
 The original data can be downloaded from here:
+https://drive.google.com/open?id=1TZYpEvSIbwDKHDchMbnD5EM37FrXqng0
