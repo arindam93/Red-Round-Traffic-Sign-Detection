@@ -22,26 +22,28 @@ print "Data has traffic signs instance numbers:", data['id'].count()
 
 ##################### Changing all the files to JPEG ######################
 
-for i in range(data.shape[0]):
-    data['img'][i] = data['img'][i].replace('ppm','jpg')
+## Uncomment this part if you don't already have the JPEG images in the folder
+
+# for i in range(data.shape[0]):
+#     data['img'][i] = data['img'][i].replace('ppm','jpg')
 
 
-train_img_dir = 'FullIJCNN2013'
-png_img_dir = 'jpg_FullIJCNN2013'
+# train_img_dir = 'FullIJCNN2013'
+# png_img_dir = 'jpg_FullIJCNN2013'
 
-if os.path.exists(png_img_dir):
-    shutil.rmtree(png_img_dir)
-os.makedirs(png_img_dir) 
+# if os.path.exists(png_img_dir):
+#     shutil.rmtree(png_img_dir)
+# os.makedirs(png_img_dir) 
 
-for img_name in os.listdir(train_img_dir):
-#for img_name in ["00000.ppm","00001.ppm","00002.ppm"]:
-    if img_name[-3:] == "ppm":
-        img_path = os.path.join(train_img_dir, img_name)
-        img = Image.open(img_path)
-        png_path = os.path.join(png_img_dir, img_name[:-3]+'jpg')
-        print (png_path)
-        img.save(png_path)
-        #img.show()
+# for img_name in os.listdir(train_img_dir):
+# #for img_name in ["00000.ppm","00001.ppm","00002.ppm"]:
+#     if img_name[-3:] == "ppm":
+#         img_path = os.path.join(train_img_dir, img_name)
+#         img = Image.open(img_path)
+#         png_path = os.path.join(png_img_dir, img_name[:-3]+'jpg')
+#         print (png_path)
+#         img.save(png_path)
+#         #img.show()
 
 
 
