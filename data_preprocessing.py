@@ -19,6 +19,11 @@ print "Data has image files with traffic signs numbers:", len(data['img'].unique
 print "Data has traffic signs class numbers:", len(data['id'].unique())
 print "Data has traffic signs instance numbers:", data['id'].count()
 
+for i in range(data.shape[0]):
+    data['img'][i] = data['img'].iloc[i].replace('ppm','jpg')
+    
+print data.head()
+
 
 ##################### Changing all the files to JPEG ######################
 
